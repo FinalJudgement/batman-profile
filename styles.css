@@ -9,6 +9,7 @@ body {
   background-color: rgb(63, 63, 63);
   background-image: url("assets/gotham-city.jpg");
   background-size: cover;
+  background-position: center;
   background-blend-mode: multiply;
   color: rgb(255, 255, 255);
 }
