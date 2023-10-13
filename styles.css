@@ -1,21 +1,36 @@
 * {
   margin: 0;
   font-family: sans-serif;
+  /* border-collapse: collapse; */
 }
+
+body {
+  background-attachment: fixed;
+  background-color: rgb(63, 63, 63);
+  background-image: url("assets/gotham-city.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+}
+
 header {
   padding-bottom: 100px;
 }
 
 nav {
-  height: 80px;
-  background-color: black;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 #logo {
   position: relative;
   display: inline;
-  font-size: 2.5rem;
+  height: 100px;
   margin: 0 50px;
-  top: 20px;
 }
 #logo p {
   display: inline;
@@ -26,7 +41,7 @@ nav ul {
   position: relative;
   list-style: none;
   float: right;
-  top: 40px;
+  top: 50px;
   font-size: 1.3rem;
   font-weight: 700;
   margin: 0 100px;
@@ -45,7 +60,26 @@ nav li:hover {
 
 nav a {
   text-decoration: none;
+  color: rgb(50, 50, 50);
   color: white;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 100px;
+  background-color: rgb(46, 46, 46);
+  border: 5px solid rgb(73, 73, 73);
+}
+
+section p {
+  padding: 100px;
+  font-size: 1.5rem;
 }
 
 h1 {
@@ -55,6 +89,9 @@ h1 {
 #banner {
   position: relative;
   text-align: center;
+  width: 100%;
+  background-color: black;
+  border: 5px solid yellow;
 }
 
 #banner h1 {
@@ -67,4 +104,49 @@ h1 {
 
 #banner img {
   height: 1000px;
+}
+
+/* Gallery Page Section */
+
+#gallery-container {
+  border: 0px;
+  background-color: transparent;
+}
+
+#gallery-container img {
+  align-items: center;
+  margin: 50px 10px;
+  height: 450px;
+  width: 650px;
+}
+
+/* Facts Page Section */
+
+.bat-facts {
+  background-color: transparent;
+  padding: 50px;
+  margin-top: 40px;
+  border-color: yellow;
+}
+
+.bat-facts span {
+  font-weight: 700;
+  color: yellow;
+}
+
+.bat-facts ol {
+  font-size: 2rem;
+}
+.bat-facts p {
+  padding: 40px;
+}
+.batfacts ul {
+  margin: 0 auto;
+}
+.bat-facts ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.4rem;
+  width: 30%;
+  padding: 10px;
 }
